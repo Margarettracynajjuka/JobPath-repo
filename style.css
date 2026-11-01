@@ -155,6 +155,52 @@ footer {
     font-size: 40;
     letter-spacing: 2px;
 }
+.contact-form p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.contact-form{
+    text-align: center;
+    padding: 40px 20px;
+}
+form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input,textarea{
+    padding:12px;
+    background-color: #012a5e;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #044b9e;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-bottom: 5px solid#ff7b00;
+}
+.divider{
+    width: 1px;
+    background-color:#ff7b00;
+    height: auto;
+    margin: 0 10px;
+    opacity: 0.6
+}
+button{
+    background-color: #ff7b00;
+    color: #001f3f;
+    padding: 12px;
+    border:none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button:hover{
+    background-color:rgb(64, 42, 1) ;
+}
 
 /* Simple responsive */
 @media (max-width: 600px) {
