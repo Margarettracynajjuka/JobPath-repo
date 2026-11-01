@@ -136,6 +136,25 @@ footer {
   color: #94a3b8;
   font-size: 14px;
 }
+.contact-header{
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 40, 0.7), rgba(0, 0, 40, 0.7)),
+    url(images/whitedesign.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color:white ;
+}
+.contact-header h1{
+    color:orange ;
+    padding: 10px 40px;
+    font-size: 40;
+    letter-spacing: 2px;
+}
 
 /* Simple responsive */
 @media (max-width: 600px) {
