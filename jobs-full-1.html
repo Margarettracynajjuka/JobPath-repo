@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latest Jobs and Openings</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="bi bi-briefcase-fill me-2"></i>Job Path
+      </a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="top" class="bg-light text-center py-5">
+    <div class="container py-4">
+      <h1 class="display-5 fw-bold">
+        <span class="text-primary">Discover</span> exciting new opportunities
+      </h1>
+      <p class="lead text-secondary mx-auto" style="max-width: 600px;">
+        In top industries and companies
+      </p>
+      <a href="#jobs" class="btn btn-primary btn-lg mt-2">
+        <i class="bi bi-search me-2"></i>Browse Jobs
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= JOBS ================= -->
+  <section id="jobs" class="container py-5">
+    <h2 class="fw-bold text-center mb-4">List of Available Jobs</h2>
+
+    <!-- Search bar -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <div class="input-group input-group-lg shadow-sm">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="text" id="searchInput" class="form-control" placeholder="Search jobs...">
+        </div>
+      </div>
+    </div>
+
+    <!-- Category pills -->
+    <ul class="nav nav-pills justify-content-center gap-2 mb-5" id="filterPills">
+      <li class="nav-item"><button class="nav-link active" data-filter="all">All</button></li>
+      <li class="nav-item"><button class="nav-link" data-filter="tech">Tech</button></li>
+      <li class="nav-item"><button class="nav-link" data-filter="security">Security</button></li>
+      <li class="nav-item"><button class="nav-link" data-filter="management">Management</button></li>
+    </ul>
+
+    <!-- Job cards -->
+    <div class="row g-4" id="jobGrid">
+
+      <!-- AI Engineer -->
+      <div class="col-lg-4 col-md-6 job-item" data-category="tech">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-0">
+                <i class="bi bi-cpu text-primary me-2"></i>AI Engineer
+              </h5>
+              <span class="badge bg-success" data-bs-toggle="tooltip" title="Work from anywhere">Remote</span>
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary">Tech</span>
+              <span class="badge bg-danger-subtle text-danger">Full Time</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Prepare data pipelines</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Evaluate models for production</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Integrate models into applications</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 pb-3">
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="AI Engineer">
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Scientist -->
+      <div class="col-lg-4 col-md-6 job-item" data-category="tech">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-0">
+                <i class="bi bi-graph-up-arrow text-primary me-2"></i>Data Scientist
+              </h5>
+              <span class="badge bg-warning text-dark" data-bs-toggle="tooltip" title="Part remote, part on-site">Hybrid</span>
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary">Tech</span>
+              <span class="badge bg-danger-subtle text-danger">Full Time</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Analyze data and frame business questions</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Explore data and analyze experiments</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Communicate findings</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 pb-3">
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Data Scientist">
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cyber Security Engineer -->
+      <div class="col-lg-4 col-md-6 job-item" data-category="security">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-0">
+                <i class="bi bi-shield-lock text-primary me-2"></i>Cyber Security Engineer
+              </h5>
+              <span class="badge bg-secondary" data-bs-toggle="tooltip" title="Office based">On-site</span>
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary">Security</span>
+              <span class="badge bg-danger-subtle text-danger">Full Time</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Design security controls</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Strengthen and harden systems</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Monitor, detect threats and respond to incidents</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 pb-3">
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Cyber Security Engineer">
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Manager -->
+      <div class="col-lg-4 col-md-6 job-item" data-category="management">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-0">
+                <i class="bi bi-kanban text-primary me-2"></i>Project Manager
+              </h5>
+              <span class="badge bg-secondary" data-bs-toggle="tooltip" title="Office based">On-site</span>
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary">Management</span>
+              <span class="badge bg-danger-subtle text-danger">Full Time</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Build plans, manage budget and resources</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Coordinate people and make reports</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Monitor progress and define goals</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 pb-3">
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Project Manager">
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Developer -->
+      <div class="col-lg-4 col-md-6 job-item" data-category="tech">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-0">
+                <i class="bi bi-code-slash text-primary me-2"></i>Web Developer
+              </h5>
+              <span class="badge bg-success" data-bs-toggle="tooltip" title="Work from anywhere">Remote</span>
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary">Tech</span>
+              <span class="badge bg-danger-subtle text-danger">Full Time</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Build interfaces and write back-end logic</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Test and debug code</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Deploy, maintain and collaborate with designers and engineers</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 pb-3">
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Web Developer">
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Shown when no job matches -->
+    <div id="noResults" class="alert alert-warning text-center mt-4 d-none">
+      <i class="bi bi-exclamation-circle me-2"></i>No jobs match your search.
+    </div>
+  </section>
+
+  <!-- ================= FAQ ACCORDION ================= -->
+  <section id="faq" class="bg-light py-5">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="fw-bold text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              How do I apply for a job?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Click <strong>Apply Now</strong> on any job card, fill in the form and upload your CV.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Can I apply for more than one job?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes. You can submit a separate application for each role you are interested in.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              What does Remote, Hybrid or On-site mean?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Remote means you work from anywhere, Hybrid is a mix of home and office, and On-site means you work from the office.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contact" class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-semibold"><i class="bi bi-briefcase-fill me-2"></i>Job Path</p>
+      <p class="mb-2 small text-white-50">Discover exciting new opportunities in top industries and companies</p>
+      <div class="fs-5">
+        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+        <a href="mailto:info@jobpath.example" class="text-white"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="small text-white-50 mt-3 mb-0">&copy; 2026 Job Path. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= APPLY MODAL ================= -->
+  <div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="applyForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Apply for <span id="modalJobTitle" class="text-primary"></span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label">Full name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Position</label>
+              <select class="form-select" id="jobSelect" required>
+                <option>AI Engineer</option>
+                <option>Data Scientist</option>
+                <option>Cyber Security Engineer</option>
+                <option>Project Manager</option>
+                <option>Web Developer</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Upload CV</label>
+              <input type="file" class="form-control" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Cover letter (optional)</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SUCCESS TOAST ================= -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast" class="toast text-bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="bi bi-check-circle me-2"></i>Application submitted successfully!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Enable tooltips
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));
+
+    // Search + category filter
+    const items = document.querySelectorAll('.job-item');
+    const searchInput = document.getElementById('searchInput');
+    const noResults = document.getElementById('noResults');
+    let activeFilter = 'all';
+
+    function applyFilters() {
+      const query = searchInput.value.toLowerCase();
+      let visible = 0;
+      items.forEach(item => {
+        const matchesCategory = activeFilter === 'all' || item.dataset.category === activeFilter;
+        const matchesSearch = item.textContent.toLowerCase().includes(query);
+        const show = matchesCategory && matchesSearch;
+        item.classList.toggle('d-none', !show);
+        if (show) visible++;
+      });
+      noResults.classList.toggle('d-none', visible > 0);
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+
+    document.querySelectorAll('#filterPills .nav-link').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#filterPills .nav-link').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    // Fill the modal with the job that was clicked
+    const applyModal = document.getElementById('applyModal');
+    applyModal.addEventListener('show.bs.modal', event => {
+      const job = event.relatedTarget.dataset.job;
+      document.getElementById('modalJobTitle').textContent = job;
+      document.getElementById('jobSelect').value = job;
+    });
+
+    // Submit: close modal and show toast
+    document.getElementById('applyForm').addEventListener('submit', e => {
+      e.preventDefault();
+      bootstrap.Modal.getInstance(applyModal).hide();
+      e.target.reset();
+      new bootstrap.Toast(document.getElementById('successToast')).show();
+    });
+  </script>
+</body>
+</html>
