@@ -111,6 +111,16 @@ h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -.01em; }
 }
 .about-list li { margin-bottom: .6rem; }
 
+/* Team member photos: round, cropped to fit, with an indigo ring */
+.team-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;          /* crops instead of stretching */
+  border-radius: 50%;         /* makes it a circle */
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px var(--jp-indigo);
+}
+
 /* ---------- 7. JOBS PAGE ---------- */
 .job-card .card-title { font-size: 1.1rem; }
 .job-card .list-group-item { border: 0; padding-left: 0; font-size: .92rem; color: var(--jp-slate); }
