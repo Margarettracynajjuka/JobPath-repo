@@ -9,17 +9,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/uiverse.css">
 </head>
 <body>
 
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">
-        <i class="bi bi-briefcase-fill me-2"></i>Job Path
-      </a>
-    </div>
-  </nav>
+ <!-- ===========Header========== -->
+  <div id="site-header"></div>
 
   <!-- ================= HERO ================= -->
   <header id="top" class="bg-light text-center py-5">
@@ -63,8 +60,8 @@
 
       <!-- AI Engineer -->
       <div class="col-lg-4 col-md-6 job-item" data-category="tech">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body">
+        <div class="uv-card job-card d-flex flex-column">
+          <div class="flex-grow-1">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <h5 class="card-title fw-bold mb-0">
                 <i class="bi bi-cpu text-primary me-2"></i>AI Engineer
@@ -81,8 +78,8 @@
               <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Integrate models into applications</li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-0 pb-3">
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="AI Engineer">
+          <div class="mt-3">
+            <button class="uv-btn uv-btn-block" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="AI Engineer">
               Apply Now
             </button>
           </div>
@@ -91,8 +88,8 @@
 
       <!-- Data Scientist -->
       <div class="col-lg-4 col-md-6 job-item" data-category="tech">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body">
+        <div class="uv-card job-card d-flex flex-column">
+        <div class="flex-grow-1">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <h5 class="card-title fw-bold mb-0">
                 <i class="bi bi-graph-up-arrow text-primary me-2"></i>Data Scientist
@@ -109,8 +106,8 @@
               <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Communicate findings</li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-0 pb-3">
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Data Scientist">
+          <div class="mt-3">
+            <button class="uv-btn uv-btn-block" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Data Scientist">
               Apply Now
             </button>
           </div>
@@ -119,8 +116,8 @@
 
       <!-- Cyber Security Engineer -->
       <div class="col-lg-4 col-md-6 job-item" data-category="security">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body">
+        <div class="uv-card job-card d-flex flex-column">
+          <div class="flex-grow-1">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <h5 class="card-title fw-bold mb-0">
                 <i class="bi bi-shield-lock text-primary me-2"></i>Cyber Security Engineer
@@ -137,8 +134,8 @@
               <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Monitor, detect threats and respond to incidents</li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-0 pb-3">
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Cyber Security Engineer">
+          <div class="mt-3">
+            <button class="uv-btn uv-btn-block" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Cyber Security Engineer">
               Apply Now
             </button>
           </div>
@@ -147,8 +144,8 @@
 
       <!-- Project Manager -->
       <div class="col-lg-4 col-md-6 job-item" data-category="management">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body">
+        <div class="uv-card job-card d-flex flex-column">
+          <div class="flex-grow-1">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <h5 class="card-title fw-bold mb-0">
                 <i class="bi bi-kanban text-primary me-2"></i>Project Manager
@@ -165,8 +162,8 @@
               <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Monitor progress and define goals</li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-0 pb-3">
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Project Manager">
+          <div class="mt-3">
+            <button class="uv-btn uv-btn-block" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Project Manager">
               Apply Now
             </button>
           </div>
@@ -175,8 +172,8 @@
 
       <!-- Web Developer -->
       <div class="col-lg-4 col-md-6 job-item" data-category="tech">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body">
+        <div class="uv-card job-card d-flex flex-column">
+          <div class="flex-grow-1">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <h5 class="card-title fw-bold mb-0">
                 <i class="bi bi-code-slash text-primary me-2"></i>Web Developer
@@ -193,8 +190,8 @@
               <li class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i>Deploy, maintain and collaborate with designers and engineers</li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-0 pb-3">
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Web Developer">
+          <div class="mt-3">
+            <button class="uv-btn uv-btn-block" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Web Developer">
               Apply Now
             </button>
           </div>
@@ -259,18 +256,7 @@
   </section>
 
   <!-- ================= FOOTER ================= -->
-  <footer id="contact" class="bg-dark text-white text-center py-4">
-    <div class="container">
-      <p class="mb-1 fw-semibold"><i class="bi bi-briefcase-fill me-2"></i>Job Path</p>
-      <p class="mb-2 small text-white-50">Discover exciting new opportunities in top industries and companies</p>
-      <div class="fs-5">
-        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
-        <a href="mailto:info@jobpath.example" class="text-white"><i class="bi bi-envelope"></i></a>
-      </div>
-      <p class="small text-white-50 mt-3 mb-0">&copy; 2026 Job Path. All rights reserved.</p>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
   <!-- ================= APPLY MODAL ================= -->
   <div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
@@ -333,6 +319,8 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="assets/js/layout.js"></script>
+  
   <script>
     // Enable tooltips
     document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));

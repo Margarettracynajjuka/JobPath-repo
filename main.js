@@ -5,7 +5,7 @@
    3. File checks
    Everything is wrapped in a function so no variables leak globally.
    NOTE: there is no server yet – forms are validated and show a success
-   message, but nothing is stored or sent. See GUIDE.md "Next steps".
+   message, but nothing is stored or sent.
    ===================================================================== */
 (function () {
   "use strict";
