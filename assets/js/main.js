@@ -1,12 +1,4 @@
-/* =====================================================================
-   main.js – page behaviour for JOB PATH
-   1. Toast helper          4. Password show/hide + confirm-match
-   2. Form validation       5. Jobs page (data, render, filter, save, apply)
-   3. File checks
-   Everything is wrapped in a function so no variables leak globally.
-   NOTE: there is no server yet – forms are validated and show a success
-   message, but nothing is stored or sent. See GUIDE.md "Next steps".
-   ===================================================================== */
+
 (function () {
   "use strict";
 

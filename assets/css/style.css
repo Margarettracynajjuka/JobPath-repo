@@ -1,9 +1,4 @@
-/* =====================================================================
-   JOB PATH – main stylesheet
-   Loaded AFTER Bootstrap so these rules can override it.
-   Sections: 1 Theme  2 Base  3 Header  4 Hero  5 Sections  6 Cards
-             7 Jobs page  8 Forms  9 Footer  10 Utilities  11 Responsive
-   ===================================================================== */
+
 
 /* ---------- 1. THEME (colours + font taken from the logo) ---------- */
 :root {

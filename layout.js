@@ -1,11 +1,4 @@
-/* =====================================================================
-   layout.js – the shared header + footer for EVERY page.
-   Each page only contains:
-       <div id="site-header"></div>  ...page content...  <div id="site-footer"></div>
-   and this script fills them in. Edit the menu or footer HERE once and
-   all pages update. (Works from a double-clicked file too, unlike fetch().)
-   The <body data-page="..."> value decides which menu link is highlighted.
-   ===================================================================== */
+
 (function () {
   "use strict";
 
